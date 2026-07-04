@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.mobile {
+  width: 100%;
+  max-width: 450px;
+  min-height: 100vh;
+  background: #fff;
+  padding: 25px;
+}
+
+/* =========================
+   WELCOME PAGE
+========================= */
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bottom {
+  margin-bottom: 40px;
+}
+
+.bottom h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.bottom p {
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.createBtn,
+.loginBtn,
+.submitBtn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.createBtn {
+  background: #6c25ff;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.loginBtn {
+  background: #cebafb;
+  color: #000;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  font-size: 38px;
+  line-height: 45px;
+  margin-bottom: 25px;
+}
+
+.form p {
+  color: gray;
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+
+.form label {
+  color: #6c25ff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+.form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #6c25ff;
+}
+
+.form input[readonly],
+.form input:disabled {
+  background: #fafafa;
+  color: #555;
+}
+
+/* =========================
+   RADIO
+========================= */
+
+.radio-group {
+  margin-top: 25px;
+}
+
+.radio-group p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.radio-options {
+  display: flex;
+  gap: 35px;
+}
+
+.radio-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-btn input {
+  width: auto;
+  accent-color: #6c25ff;
+}
+
+.submitBtn {
+  margin-top: 35px;
+  background: #6c25ff;
+  color: white;
+}
+
+/* =========================
+   ACCOUNT
+========================= */
+
+.account h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  color: gray;
+}
+
+.description {
+  margin-top: 20px;
+  border-top: 1px dashed #ccc;
+  padding-top: 20px;
+  line-height: 28px;
+  color: #555;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .mobile {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .form h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .bottom h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: white;
+  }
+
+  .mobile {
+    padding: 18px;
+  }
+
+  .form h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .bottom h1 {
+    font-size: 28px;
+  }
+}
