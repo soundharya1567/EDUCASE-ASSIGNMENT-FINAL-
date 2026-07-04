@@ -1,12 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Welcome from "./pages/Welcome";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Account from "./pages/Account";
-
 import "./App.css";
-
 function App() {
   return (
     <BrowserRouter>
@@ -19,5 +16,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
